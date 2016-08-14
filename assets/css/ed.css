@@ -317,6 +317,10 @@ h3.masthead-title {
 	margin-top: 2px;
 }
 
+img.masthead-image {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @media (max-width: 48em) {
   .masthead-title {
