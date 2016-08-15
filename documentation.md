@@ -45,7 +45,7 @@ var menu = µ("#menu");
 
 for (var i = 0, len = this.length; i < len; i++) {
     //As HTMLElement
-    menu[i].classList.addClass('active');
+    menu[i].classList.add('active');
     //or
     µ(menu[i]).addClass('active');
 }
