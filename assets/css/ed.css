@@ -365,7 +365,7 @@ img.masthead-image {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: -14rem;
+  right: -14rem;
   width: 14rem;
   visibility: hidden;
   overflow-y: auto;
@@ -440,13 +440,14 @@ a.sidebar-nav-item:focus {
 .sidebar-toggle {
   position: absolute;
   top:  .8rem;
-  left: 1rem;
+  right: 1rem;
   display: block;
   padding: .25rem .75rem;
   color: #505050;
   background-color: #fff;
   border-radius: .25rem;
   cursor: pointer;
+  z-index: 10;
 }
 
 .sidebar-toggle:before {
@@ -521,9 +522,9 @@ a.sidebar-nav-item:focus {
 #sidebar-checkbox:checked ~ .sidebar,
 #sidebar-checkbox:checked ~ .wrap,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  -webkit-transform: translateX(14rem);
-      -ms-transform: translateX(14rem);
-          transform: translateX(14rem);
+  -webkit-transform: translateX(-14rem);
+      -ms-transform: translateX(-14rem);
+          transform: translateX(-14rem);
 }
 
 /*
@@ -545,9 +546,9 @@ a.sidebar-nav-item:focus {
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar,
 .layout-reverse #sidebar-checkbox:checked ~ .wrap,
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {
-  -webkit-transform: translateX(-14rem);
-      -ms-transform: translateX(-14rem);
-          transform: translateX(-14rem);
+  -webkit-transform: translateX(14rem);
+      -ms-transform: translateX(14rem);
+          transform: translateX(14rem);
 }
 
 
@@ -701,6 +702,61 @@ div.toc {
   margin-bottom: 4rem;
 }
 
+@media (min-width: 30em) {
+  .masthead{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 5;
+  }
+
+  .page{
+    padding-top: 15em;
+    padding-left: 10em;
+  }
+
+  .page section.toc{
+    font-size: .75rem;
+    background-color: #841212;
+    overflow: auto;
+    padding: 1em;
+    position: fixed;
+    width: 14em;
+    bottom: 0;
+    left: 0;
+    top: 14em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 5;
+  }
+
+  h3.toc {
+    color: #fff;
+  }
+
+  .page #markdown-toc a{
+    font-weight: normal;
+    color: #fff;
+  }
+  .page ul#markdown-toc{
+    padding-left: 0;
+  }
+
+  .page ul#markdown-toc li {
+    padding-bottom: 1em;
+  }
+
+  .page ul#markdown-toc ul{
+    padding-top: 1em;
+    padding-left: 1em;
+  }
+  
+  .page ul#markdown-toc ul li{
+    padding-bottom: 1em;
+  }
+}
 
 /* Poem styles */
 

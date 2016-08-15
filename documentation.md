@@ -4,13 +4,21 @@ title: Documentation
 author: Todd Henderson
 ---
 
-## Contents
-{:.no_toc}
-
-* ToC
+<section id='table-of-contents' class='toc'>
+  <header>
+    <h3 class='toc'>Contents</h3>
+  </header>
+<div id='drawer' markdown='1'>
+*  Auto generated table of contents
 {:toc}
+</div>
+</section><!-- /#table-of-contents -->
+
+
 
 ---
+{:toc_devider}
+
 
 ### microTK(selector, scope), µ(selector, scope) 
 
