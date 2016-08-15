@@ -35,20 +35,8 @@
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
     <script>
-
-    // Highlight search Query
-    var url = window.location.href;
-      if (url.lastIndexOf("?q=") > 0) {
-        // get the index of the parameter, add three (to account for length)
-        var stringloc = url.lastIndexOf("?q=") + 3;
-        // get the substring (query) and decode
-        var searchquery = decodeURIComponent(url.substr(stringloc));
-        // regex matches at beginning of line, end of line or word boundary, useful for poetry
-        var regex = new RegExp("(?:^|\\b)(" + searchquery + ")(?:$|\\b)", "gim");
-        // get, add mark and then set content
-        var content = document.getElementById("main").innerHTML;
-        document.getElementById("main").innerHTML = content.replace(regex, "<mark>$1</mark>");
-      }
+    // Yea I know what your thinking, "Hey, they don't even use their own Library..." 
+    // We take minimalist sersiouly.  Why add 5k when we can do it with 10 lines.
 
     // Toggle sidebar  
       (function(document) {
@@ -67,24 +55,5 @@
         }, false);
       })(document);
     </script>
-    <!-- Facebook SDK for JavaScript -->
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '589495744558280',
-      xfbml      : true,
-      version    : 'v2.6'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-
   </body>
 </html>

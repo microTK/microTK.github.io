@@ -28,6 +28,8 @@ Creates a new instance of MicroTK with specified query paremeters or element(s)
 
 ```js
 var menu = µ("#menu");
+//or
+var menu = microTK("#menu");
 ```
 
 ********************
@@ -36,7 +38,7 @@ var menu = µ("#menu");
 The main class of the microTK library, it is a list of selected HTMLElement 
 that various actions be performed on.
 
-**MicroTK.length**: `int`, The current number of selected elements.
+**.length**: `int`, The current number of selected elements.
 
 **Example**:
 
@@ -51,11 +53,11 @@ for (var i = 0, len = this.length; i < len; i++) {
 }
 ```
 
-**MicroTK.version**: `string`, The current version. 
+**.version**: `string`, The current version. 
 
 ****************
 
-### MicroTK.addAttribute(name, value) 
+### .addAttribute(name, value) 
 
 Adds an attribute to the selected elements.
 
@@ -75,7 +77,7 @@ Adds an attribute to the selected elements.
 
 ****************
 
-### MicroTK.addClass(className) 
+### .addClass(className) 
 
 Adds a class to the selected elements.
 
@@ -93,7 +95,7 @@ Adds a class to the selected elements.
 
 ********************
 
-### MicroTK.addEvent(event, action) 
+### .addEvent(event, action) 
 
 Adds an event to the selected elements.
 
@@ -115,7 +117,7 @@ Adds an event to the selected elements.
 
 ********************
 
-### MicroTK.append(element) 
+### .append(element) 
 
 Appends an HTMLElement into the selected elements.
 
@@ -134,7 +136,7 @@ var element = document.createElement("div")
 
 ********************
 
-### MicroTK.each(action) 
+### .each(action) 
 
 Performs an action on the selected elements
 
@@ -154,7 +156,7 @@ Performs an action on the selected elements
 
 ********************
 
-### MicroTK.hasAttribute(name, action) 
+### .hasAttribute(name, action) 
 
 Checks to see if elements contains provided class and performs provided action.
 
@@ -176,7 +178,7 @@ Checks to see if elements contains provided class and performs provided action.
 
 ********************
 
-### MicroTK.hasClass(className, action) 
+### .hasClass(className, action) 
 
 Checks to see ff elements contains provided class and performs provided action.
 
@@ -198,7 +200,7 @@ Checks to see ff elements contains provided class and performs provided action.
 
 ********************
 
-### MicroTK.prepend(element) 
+### .prepend(element) 
 
 Prepends an HTMLElement into the selected elements.
 
@@ -217,7 +219,7 @@ var element = document.createElement("div")
 
 ********************
 
-### MicroTK.remove() 
+### .remove() 
 
 Removes the selected elements from the DOM.
 
@@ -231,7 +233,7 @@ Removes the selected elements from the DOM.
 
 ********************
 
-### MicroTK.removeAttribute(name) 
+### .removeAttribute(name) 
 
 Removes an attribute from the selected elements.
 
@@ -249,7 +251,7 @@ Removes an attribute from the selected elements.
 
 ********************
 
-### MicroTK.removeClass(className) 
+### .removeClass(className) 
 
 Removes a class from the selected elements.
 
@@ -267,7 +269,7 @@ Removes a class from the selected elements.
 
 ********************
 
-### MicroTK.toggleClass(className) 
+### .toggleClass(className) 
 
 Toggles a class in selected elements.
 
