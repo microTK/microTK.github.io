@@ -17,6 +17,8 @@ It is tiny!  The current minified version is under 5k, while most of the other p
 <script src="//cdn.rawgit.com/microTK/microTK/master/dist/microTK.min.js"></script>
 ```
 
+[![Build Status](https://drone.io/github.com/thenderson21/microTK/status.png)](https://drone.io/github.com/thenderson21/microTK/latest)
+
 ## Latest Release ({{site.version}})
 
 ```html
