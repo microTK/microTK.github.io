@@ -3,7 +3,7 @@
 # Setup
 title:               microTK
 tagline:             'A tiny JavaScript library.'
-description:         ''
+description:         'MicriTK is a tiny (>10k), minimalistic, and fast Javascript library for when every byte counts. '
 url:                 'http://microtk.io'
 baseurl:             ''
 
