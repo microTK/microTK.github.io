@@ -29,8 +29,11 @@
 
       <div class="container content" id="main">
         {{ content }}
+
+        <div class="ad-bottom">
+          {% include ad.html %}
+        </div>
       </div>
-        {% include ad.html %}
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>

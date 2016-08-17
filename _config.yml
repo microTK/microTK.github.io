@@ -3,7 +3,7 @@
 # Setup
 title:               microTK
 tagline:             'A tiny JavaScript library.'
-description:         'MicriTK is a tiny (>10k), minimalistic, and fast Javascript library for when every byte counts. '
+description:         'MicriTK is a tiny (>5k), minimalistic, and fast Javascript library for when every byte counts. '
 url:                 'http://microtk.io'
 baseurl:             ''
 
@@ -44,7 +44,7 @@ kramdown:
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
 
 # Custom vars
-version:             v0.0.2-pre
+version:             v0.0.4-pre
 
 # Exclusions from the final site
 exclude: [optional, vendor]

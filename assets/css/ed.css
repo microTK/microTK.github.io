@@ -717,7 +717,7 @@ div.toc {
   }
 
   .page{
-    padding-left: 10em;
+    padding-left: 14rem;
   }
 
   .page section.toc{
@@ -726,7 +726,7 @@ div.toc {
     overflow: auto;
     padding: 1em;
     position: fixed;
-    width: 14em;
+    width: 14rem;
     bottom: 0;
     left: 0;
     top: 14em;
@@ -873,6 +873,11 @@ ol.bibliography {
 	list-style-type:none;
 	padding-left: 1rem;
 	text-indent: -1rem;
+}
+/*Ad blocks styles*/
+.ad-bottom {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
