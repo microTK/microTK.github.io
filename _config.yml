@@ -44,7 +44,7 @@ kramdown:
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
 
 # Custom vars
-version:             v0.0.4-pre
+version: v0.1.0-pre
 
 # Exclusions from the final site
 exclude: [optional, vendor]

@@ -20,7 +20,7 @@ author: Todd Henderson
 {:toc_devider}
 
 
-### microTK(selector, scope), µ(selector, scope) 
+### microTK(selector, scope) 
 
 Creates a new instance of MicroTK with specified query paremeters or element(s)
 
@@ -33,39 +33,20 @@ Creates a new instance of MicroTK with specified query paremeters or element(s)
 **Returns**: `microTK`, An instance of the MicroTK object.
 
 **Example**:
-
 ```js
 var menu = µ("#menu");
-//or
-var menu = microTK("#menu");
 ```
 
-********************
 
 ## Class: MicroTK
 The main class of the microTK library, it is a list of selected HTMLElement 
 that various actions be performed on.
 
-**.length**: `int`, The current number of selected elements.
-
-**Example**:
-
-```js
-var menu = µ("#menu");
-
-for (var i = 0, len = this.length; i < len; i++) {
-    //As HTMLElement
-    menu[i].classList.add('active');
-    //or
-    µ(menu[i]).addClass('active');
-}
-```
-
-**.version**: `string`, The current version. 
-
-****************
-
-### .addAttribute(name, value) 
+**int**:  , The main class of the microTK library, it is a list of selected HTMLElement 
+that various actions be performed on.
+**string**:  , The main class of the microTK library, it is a list of selected HTMLElement 
+that various actions be performed on.
+### MicroTK.addAttribute(name, value) 
 
 Adds an attribute to the selected elements.
 
@@ -78,14 +59,11 @@ Adds an attribute to the selected elements.
 **Returns**: `MicroTK`, A copy of the MicroTK object.
 
 **Example**:
-
 ```js
 µ("#menu").addAttribute("title", "test");
 ```
 
-****************
-
-### .addClass(className) 
+### MicroTK.addClass(className) 
 
 Adds a class to the selected elements.
 
@@ -96,14 +74,11 @@ Adds a class to the selected elements.
 **Returns**: `microTK`, A copy of the MicroTK object.
 
 **Example**:
-
 ```js
 µ("#menu").addClass("active");
 ```
 
-********************
-
-### .addEvent(event, action) 
+### MicroTK.addEvent(event, action) 
 
 Adds an event to the selected elements.
 
@@ -116,16 +91,13 @@ Adds an event to the selected elements.
 **Returns**: `microTK`, A copy of the MicroTK object.
 
 **Example**:
-
 ```js
 µ("#menu").addEvent("click", function (e){
     µ(e).toggleClass("active");   
 });
 ```
 
-********************
-
-### .append(element) 
+### MicroTK.append(element) 
 
 Appends an HTMLElement into the selected elements.
 
@@ -133,18 +105,15 @@ Appends an HTMLElement into the selected elements.
 
  - **element**: `HTMLElement`, Element to be removed.
 
- **Returns**: `microTK`, A copy of the MicroTK object.
+**Returns**: `microTK`, A copy of the MicroTK object.
 
 **Example**:
-
 ```js
 var element = document.createElement("div")
 µ("#menu").append(element);
 ```
 
-********************
-
-### .each(action) 
+### MicroTK.each(action) 
 
 Performs an action on the selected elements
 
@@ -152,19 +121,16 @@ Performs an action on the selected elements
 
  - **action**: `elementAction`, Function to be run when the element has providec class.
 
- **Returns**: `microTK`, A copy of the MicroTK object.
+**Returns**: `microTK`, A copy of the MicroTK object.
 
 **Example**:
-
 ```js
 µ("#menu").each(function (e){
     e.classList.add("active");   
 });
 ```
 
-********************
-
-### .hasAttribute(name, action) 
+### MicroTK.hasAttribute(name, action) 
 
 Checks to see if elements contains provided class and performs provided action.
 
@@ -177,16 +143,13 @@ Checks to see if elements contains provided class and performs provided action.
 **Returns**: `microTK`, A copy of the MicroTK object.
 
 **Example**:
-
 ```js
 µ("#menu").hasAttribute("title", function (e){
     e.title = "woohoo"; 
 });
 ```
 
-********************
-
-### .hasClass(className, action) 
+### MicroTK.hasClass(className, action) 
 
 Checks to see ff elements contains provided class and performs provided action.
 
@@ -199,16 +162,13 @@ Checks to see ff elements contains provided class and performs provided action.
 **Returns**: `microTK`, A copy of the MicroTK object.
 
 **Example**:
-
 ```js
 µ("#menu").hasClass("active", function (e){
     e.classList.remove("active");   
 });
 ```
 
-********************
-
-### .prepend(element) 
+### MicroTK.prepend(element) 
 
 Prepends an HTMLElement into the selected elements.
 
@@ -219,29 +179,23 @@ Prepends an HTMLElement into the selected elements.
 **Returns**: `microTK`, A copy of the MicroTK object.
 
 **Example**:
-
 ```js
 var element = document.createElement("div")
 µ("#menu").prepend(element);
 ```
 
-********************
-
-### .remove() 
+### MicroTK.remove() 
 
 Removes the selected elements from the DOM.
 
 **Returns**: `microTK`, A copy of the MicroTK object.
 
- - **Example**:
-
+**Example**:
 ```js
 µ("#menu").remove();
 ```
 
-********************
-
-### .removeAttribute(name) 
+### MicroTK.removeAttribute(name) 
 
 Removes an attribute from the selected elements.
 
@@ -252,14 +206,11 @@ Removes an attribute from the selected elements.
 **Returns**: `microTK`, A copy of the MicroTK object.
 
 **Example**:
-
 ```js
 µ("#menu").removeAttribute("id");
 ```
 
-********************
-
-### .removeClass(className) 
+### MicroTK.removeClass(className) 
 
 Removes a class from the selected elements.
 
@@ -270,14 +221,11 @@ Removes a class from the selected elements.
 **Returns**: `microTK`, A copy of the MicroTK object.
 
 **Example**:
-
 ```js
 µ("#menu").removeClass("active");
 ```
 
-********************
-
-### .toggleClass(className) 
+### MicroTK.toggleClass(className) 
 
 Toggles a class in selected elements.
 
@@ -288,7 +236,40 @@ Toggles a class in selected elements.
 **Returns**: `microTK`, A copy of the MicroTK object.
 
 **Example**:
-
 ```js
 µ("#menu").toggleClass("active");
+```
+
+### microTK.extend(object, properties) 
+
+Extend a source object with the properties of another object (shallow copy).
+
+**Parameters**
+
+ - **object**: `object`, object to be extended.
+
+ - **properties**: `object`, object to donate properties.
+
+**Returns**: `object`, Origional object ectended with propertes of second object.
+
+**Example**:
+```js
+var options = µ.extend({}, { async: true });
+```
+
+### microTK.merge(object, overrides) 
+
+Merge objects, returning a fresh copy with attributes from both sides.
+
+**Parameters**
+
+ - **object**: `object`, object to be extended.
+
+ - **overrides**: `object`, extension object.
+
+**Returns**: `object`, A new object with combined attributes.
+
+**Example**:
+```js
+var options = µ.merge({}, { async: true });
 ```
